@@ -1,20 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figma Layout</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <h1>피그마 레이아웃 구현</h1>
-    <p>피그마 접근 권한 문제로 인해 디자인을 확인할 수 없습니다.</p>
-    <p>스크린샷, 디자인 명세, 인터랙션 정보를 제공해주시면 확인 후 작업을 진행하겠습니다.</p>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Responsive Layout (from Figma)</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<main>
+			<section class="support-hero" id="support">
+				<div class="container support-intro">
+					<div class="intro-small">CUSTOMER SUPPORT</div>
+					<h1 class="intro-title">고객지원</h1>
+				</div>
+			</section>
 
-    <script>
-        // JavaScript 코드는 이 곳에 작성됩니다.
-    </script>
-</body>
+			<section class="support-section">
+				<div class="container support-grid">
+					<div class="news-col">
+						<ul class="news-list">
+							<li class="news-item">
+								<div class="news-meta">
+									<span class="label">NEWS</span>
+									  <div class="date"><span class="material-icons">calendar_today</span>2025.11.13</div>
+								</div>
+								<div class="news-body">
+									<h3>이 곳에는 뉴스게시글의 제목이 들어갑니다.</h3>
+									<p>이 곳에는 뉴스게시글의 내용이 들어갑니다. 이 곳에는 뉴스게시글의 내용이 들어갑니다...</p>
+								</div>
+							</li>
+							<li class="news-item">
+								<div class="news-meta">
+									<span class="label notice">NOTICE</span>
+									  <div class="date"><span class="material-icons">calendar_today</span>2025.11.13</div>
+								</div>
+								<div class="news-body">
+									<h3>이 곳에는 공지게시글의 제목이 들어갑니다.</h3>
+									<p>이 곳에는 공지게시글의 내용이 들어갑니다. 이 곳에는 공지게시글의 내용이 들어갑니다...</p>
+								</div>
+							</li>
+							<li class="news-item">
+								<div class="news-meta">
+									<span class="label notice">NOTICE</span>
+									  <div class="date"><span class="material-icons">calendar_today</span>2025.11.13</div>
+								</div>
+								<div class="news-body">
+									<h3>이 곳에는 공지게시글의 제목이 들어갑니다.</h3>
+									<p>이 곳에는 공지게시글의 내용이 들어갑니다. 이 곳에는 공지게시글의 내용이 들어갑니다...</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<aside class="cards-col" aria-label="지원 카드">
+						<a class="support-card" href="#">
+							<span class="card-bg card-1"></span>
+							<div class="card-overlay">
+								<div class="card-title">공지</div>
+								<div class="card-plus"><span class="material-icons">add</span></div>
+							</div>
+						</a>
+						<a class="support-card" href="#">
+							<span class="card-bg card-2"></span>
+							<div class="card-overlay">
+								<div class="card-title">뉴스</div>
+								<div class="card-plus"><span class="material-icons">add</span></div>
+							</div>
+						</a>
+						<a class="support-card" href="#">
+							<span class="card-bg card-3"></span>
+							<div class="card-overlay">
+								<div class="card-title">자료실</div>
+								<div class="card-plus"><span class="material-icons">add</span></div>
+							</div>
+						</a>
+					</aside>
+				</div>
+			</section>
+
+		</main>
+	</body>
 </html>
